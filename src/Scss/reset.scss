@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-row > [class*='col-'] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-md-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.p-r-t {
+    position: relative !important;
+}
+
+html * {
+    font-family: Roboto, sans-serif;
+}
+
+.text-warning {
+    color: #f49322 !important;
+}
+
+.text-right {
+    text-align: right !important;
+}

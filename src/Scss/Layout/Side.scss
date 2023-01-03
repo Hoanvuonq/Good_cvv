@@ -1,0 +1,193 @@
+.side-app {
+    position: fixed;
+    height: 100vh;
+    border-right: 0 !important;
+    background-image: linear-gradient(to right, #434343 0%, #000 100%) !important;
+    width: 280px;
+    display: flex;
+    z-index: 11;
+    overflow: hidden;
+    min-width: 280px;
+    flex: 0 0 280px;
+    // margin-top: -60px;
+    padding-top: 60px;
+    transition: all 0.2s;
+
+    .side-app-inner {
+        z-index: 15;
+        position: relative;
+        height: 100%;
+
+        .side-app-container {
+            padding: 2px 1.5rem 1.5rem;
+
+            .vertical-nav-menu {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                list-style: none;
+                width: 232px;
+
+                li {
+                    cursor: pointer;
+                    .title {
+                        text-decoration: none;
+                        color: #ffffffb3;
+                        display: block;
+                        line-height: 2.4rem;
+                        height: 2.4rem;
+                        padding: 0 1.5rem 0 45px;
+                        position: relative;
+                        border-radius: 0.25rem;
+                        white-space: nowrap;
+                        transition: all 0.2s;
+                        margin: 0.1rem 0;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #ffffffb3;
+                            background: #ffffff26;
+                            font-weight: bold;
+                            border-radius: 0.3rem;
+                        }
+                    }
+
+                    .active {
+                        color: #ffffffb3;
+                        background: #ffffff26;
+                        font-weight: bold;
+                        border-radius: 0.3rem;
+                    }
+
+                    .style-flex {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .toggle-chevd {
+                            color: #ffffffb3;
+                            margin-top: 8px;
+                            margin-right: 5px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #ffffffb3;
+                            display: block;
+                            line-height: 2.4rem;
+                            height: 2.4rem;
+                            padding: 0 1.5rem 0 45px;
+                            position: relative;
+                            border-radius: 0.25rem;
+                            white-space: nowrap;
+                            transition: all 0.2s;
+                            margin: 0.1rem 0;
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            color: #ffffffb3;
+                            background: #ffffff26;
+                            font-weight: bold;
+                            border-radius: 0.3rem;
+                        }
+                    }
+
+                    .menu-dropdown {
+                        transition: padding 300ms;
+                        padding: 0.5em 0 0 2rem;
+                        padding: 0;
+                        position: relative;
+                        list-style: none;
+                        display: none;
+
+                        &::before {
+                            background: #ffffff1a;
+                            content: '';
+                            height: 100%;
+                            opacity: 1;
+                            width: 3px;
+                            // background: #e0f3ff;
+                            position: absolute;
+                            left: 20px;
+                            top: 0;
+                            border-radius: 15px;
+                        }
+
+                        li {
+                            .title-menu {
+                                color: #fff9;
+                                height: 2rem;
+                                line-height: 2rem;
+                                // padding: 0 1.5rem 0;
+                                margin-left: 30px;
+                                width: 150px;
+
+                                &:hover {
+                                    color: #ffffffb3;
+                                    background: #ffffff26;
+                                    font-weight: bold;
+                                    border-radius: 0.3rem;
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                color: #ffffffb3;
+                                display: block;
+                                line-height: 2.4rem;
+                                height: 2.4rem;
+                                padding: 0 1.5rem 0 45px;
+                                position: relative;
+                                border-radius: 0.25rem;
+                                white-space: nowrap;
+                                transition: all 0.2s;
+                                margin: 0.1rem 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .show {
+                        display: block;
+                        transition-duration: 0.25s;
+                        transition-timing-function: ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-menu {
+    display: inline-block;
+    position: absolute;
+    margin-left: 590px;
+    z-index: 99999;
+
+    .close-modal {
+        position: absolute;
+        color: #fff;
+        margin-top: 120px;
+        z-index: 999;
+        right: 0;
+        margin-right: 23px;
+        font-size: 17px;
+        background: #dc1616;
+        width: 20px;
+        text-align: center;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background: #f11d1d;
+        }
+    }
+}
+.backround-moda l {
+    z-index: 500;
+    position: fixed;
+    background: #0000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000bf;
+}

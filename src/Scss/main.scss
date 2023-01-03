@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixin';
+@import 'reset';
+
+@import './Pages/Home.scss';
+@import './Pages/Login.scss';
+@import './Pages/Register.scss';
+@import './Pages/InformationUser.scss';
+
+@import './Layout/Nav.scss';
+@import './Layout/Side.scss';
+@import './Layout/Modal.scss';
+@import './Layout/ModalLogout.scss';

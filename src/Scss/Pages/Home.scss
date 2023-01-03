@@ -1,0 +1,123 @@
+.home {
+    background-image: linear-gradient(to right, #434343 0%, #000 100%) !important;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+
+    .nav {
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .side {
+        margin-top: 60px;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+        position: relative;
+        // height: 100vh;
+        right: 0;
+        padding-top: 60px;
+        padding-left: 280px;
+        z-index: 9;
+        flex-direction: column;
+
+        .main-content {
+            padding: 30px 30px 0;
+            flex: 1;
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+
+                .card {
+                    box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%),
+                        0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+                    border-width: 0;
+                    transition: all 0.2s;
+
+                    background-image: linear-gradient(to right, #434343 0%, #000 100%) !important;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    background-color: #fff;
+                    background-clip: border-box;
+                    border: 1px solid #1a367e20;
+                    border-radius: 0.25rem;
+
+                    .row-card {
+                        .col-card {
+                            .table {
+                                display: block;
+                                width: 100%;
+                                overflow-x: auto;
+
+                                table {
+                                    color: #fff !important;
+                                    margin-bottom: 0 !important;
+                                    vertical-align: middle !important;
+                                    width: 100%;
+                                    background-color: #0000;
+
+                                    tbody {
+                                        tr {
+                                            border: none !important;
+                                            td {
+                                                padding: 0.3rem;
+                                                border: 0;
+                                                vertical-align: middle;
+
+                                                a {
+                                                    text-decoration: none;
+
+                                                    &:hover {
+                                                        text-decoration: revert;
+                                                    }
+                                                }
+                                            }
+                                            .first-td {
+                                                width: 11%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal-menu-home {
+            display: inline-block;
+            position: absolute;
+            margin-left: 200px;
+
+            .close-modal {
+                position: absolute;
+                color: #fff;
+                margin-top: 120px;
+                z-index: 999;
+                right: 0;
+                margin-right: 23px;
+                font-size: 17px;
+                background: #dc1616;
+                width: 20px;
+                text-align: center;
+                border-radius: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    background: #f11d1d;
+                }
+            }
+        }
+    }
+}

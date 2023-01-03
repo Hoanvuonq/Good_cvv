@@ -1,0 +1,189 @@
+/* Login Style */
+#app-login {
+    outline: none;
+    background: #242424 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+
+    .main {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        .wrap {
+            padding: 0 !important;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+            .content {
+                width: 100%;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 1.25rem;
+
+                .logo-content {
+                    text-align: center !important;
+
+                    .logo {
+                        width: 400px;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+
+                .body-content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    pointer-events: auto;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #0003;
+                    border-radius: 0.3rem;
+                    outline: 0;
+
+                    .main-body {
+                        padding: 40px 20px;
+
+                        .form-row {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-right: -5px;
+                            margin-left: -5px;
+
+                            .row {
+                                .alert {
+                                    display: none;
+                                    // display: block;
+                                }
+
+                                .alert-danger {
+                                    color: #71132a;
+                                    background-color: #f7d3dc;
+                                    border-color: #f4c2ce;
+                                }
+
+                                .alert-dismissible {
+                                    padding-right: 4rem;
+                                }
+
+                                .alert {
+                                    position: relative;
+                                    padding: 0.75rem 1.25rem;
+                                    margin-bottom: 1rem;
+                                    border: 1px solid #0000;
+                                    border-radius: 0.25rem;
+
+                                    .close {
+                                        cursor: pointer;
+                                        top: 5px;
+                                        right: 5px;
+                                        padding: 5px;
+                                        position: absolute;
+                                        color: inherit;
+                                        background-color: #0000;
+                                        border: 0;
+                                        float: right;
+                                        font-size: 1.5rem;
+                                        font-weight: 700;
+                                        line-height: 1;
+                                        text-shadow: 0 1px 0 #fff;
+                                        opacity: 0.5;
+                                        appearance: none;
+
+                                        .close-x {
+                                            cursor: pointer;
+                                            &:hover {
+                                                color: #000;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .form-group {
+                                    margin-bottom: 1rem;
+
+                                    .form-control {
+                                        padding: 25px 0 !important;
+                                        transition: all 0.2s;
+                                        display: block;
+                                        width: 418px;
+                                        height: 0px !important;
+                                        font-size: 1rem;
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                        color: #495057 !important;
+                                        background-color: #fff !important;
+                                        background-clip: padding-box;
+                                        border: 1px solid #ced4da;
+                                        border-radius: 0.25rem !important;
+                                        text-indent: 20px;
+                                    }
+                                }
+                            }
+
+                            .title-no-account {
+                                font-weight: 200;
+                                .sign-up {
+                                    color: #f49322 !important;
+                                    margin-left: 5px;
+                                    text-decoration: none;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            .btn-main {
+                                color: #fff !important;
+                                background: #000 !important;
+                                border: none;
+                                padding: 14px;
+                                font-size: 16px;
+                                border-radius: 0.3rem !important;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .row-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    text-align: center;
+                    margin-top: 25px;
+
+                    .number-online {
+                        .text-while {
+                            color: #fff;
+
+                            .dot-green {
+                                height: 12px;
+                                width: 12px;
+                                background-color: #31b713;
+                                border-radius: 50%;
+                                display: inline-block;
+                                margin-right: 5px;
+                            }
+
+                            .dot-grey {
+                                height: 12px;
+                                width: 12px;
+                                background-color: #616161;
+                                border-radius: 50%;
+                                display: inline-block;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
